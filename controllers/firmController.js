@@ -1,7 +1,7 @@
-const path=require('path');
 const Firm=require('../models/Firm');
 const Vendor=require('../models/Vendor');
 const multer=require('multer');
+const path=require('path');
  const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, './uploads'); // folder to store uploaded files
